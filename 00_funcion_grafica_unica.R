@@ -63,7 +63,7 @@ funcion_graficas <- function(contra_parte, tipo_de_grafica, fecha_de_los_datos, 
       mapa <- readRDS(file = "01_datos/mapa2.RDS") %>% 
         clean_names()
       
-      #se neceista que el archivo se llama personas_beneficiarias_MF August 2022.xlsx por ejemplo
+      #se necesita que el archivo se llame personas_beneficiarias_MF August 2022.xlsx por ejemplo
       bd_edos <- read_excel(paste0("01_datos/personas_beneficiarias_MF ",fecha_de_los_datos,".xlsx")) %>% 
         clean_names()
       
